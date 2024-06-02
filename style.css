@@ -165,7 +165,7 @@ main .inicio-main .inicio-titulos {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   padding-top: 5vh;
@@ -626,8 +626,7 @@ footer .rodape ul li a i {
   main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
   main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
   main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    padding-top: 10px;
-    width: 100%;
+    width: 95%;
   }
 
   #btn {
@@ -791,6 +790,10 @@ footer .rodape ul li a i {
 }
 
 @media (min-width: 1025px) {
+
+  main .inicio-main {
+    height: 80vh;
+  }
 
   main .inicio-main .imagem img {
     width: 100%;
