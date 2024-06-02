@@ -78,11 +78,10 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10.5vh;
+  gap: 10vh;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-  padding-top: 7.5vh;
 }
 
 .itens ul li a{
@@ -103,6 +102,7 @@ nav {
   width: 15px;
   background-color: #000000;
   margin: 3px;
+  transition: all .6s ease;
 }
 
 nav .sidebar .icone {
@@ -122,7 +122,7 @@ nav .sidebar .icone p:nth-child(2){
 }
 
 nav .sidebar .icone p:nth-child(3){
-  display: none;
+  opacity: 0;
 }
 
 .sidebar .itens {
@@ -271,7 +271,7 @@ main .propagar {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  box-shadow: 0 0 10px black;;
+  box-shadow: 0 0 10px black;
 }
 
 main .propagar .ttl h1 {
@@ -293,7 +293,6 @@ main .propagar .cardapio .cards{
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  flex-wrap: wrap;
 }
 
 main .propagar .cardapio .card1 {
@@ -513,8 +512,7 @@ main .propagar .cardapio .ter_parte .card6 h3 {
 }
 
 #btn {
-  width: 20vw;
-  height: 10vh;
+  padding: 3vh 15vw;
   color: black;
   border-radius: 10px;
   background-color: orange;
@@ -581,9 +579,105 @@ footer .rodape ul li a i {
 
 @media (max-width: 480px) {
 
-  body {
-    width: 100vw;
+  .nav .lista-itens ul {
+    display: none;
   }
+
+  .icone {
+    display: block;
+  }
+
+  .itens ul {
+    padding-top: 15vh;
+  }
+
+  .sidebar .itens {
+    margin-top: 16vh;
+  }
+
+  main .inicio-main {
+    flex-direction: column;
+  }
+
+  main .inicio-main .imagem img {
+    width: 100%;
+  }
+
+  main .propagar {
+    border: none;
+  }
+
+  main .propagar .ttl h1 {
+    margin-bottom: 6vh;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
+    height: 35vh;
+    width: 38vw;
+  }
+
+  #btn {
+    margin-top: 9vh;
+  }
+
+  .exibirValor {
+    margin-top: 7vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+  .nav .lista-itens ul {
+    display: none;
+  }
+
+  .icone {
+    display: block;
+  }
+
+  .itens ul {
+    padding-top: 15vh;
+  }
+
+  .sidebar .itens {
+    margin-top: 16vh;
+  }
+
+  main .inicio-main {
+    flex-direction: column;
+  }
+
+  main .inicio-main .imagem img {
+    width: 75%;
+  }
+
+  main .propagar {
+    border: none;
+  }
+
+  main .propagar .ttl h1 {
+    margin-bottom: 12vh;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
+    height: 61vh;
+    width: 43vw;
+  }
+
+  #btn {
+    margin-top: 9vh;
+  }
+
+  .exibirValor {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 930px) {
 
   .nav .lista-itens ul {
     display: none;
@@ -598,7 +692,7 @@ footer .rodape ul li a i {
   }
 
   .sidebar .itens {
-    margin-top: 18vh;
+    margin-top: 16vh;
   }
 
   main .inicio-main {
@@ -606,6 +700,82 @@ footer .rodape ul li a i {
   }
 
   main .inicio-main .imagem img {
+    width: 70%;
+  }
+
+  main .propagar {
+    border: none;
+  }
+
+  main .propagar .ttl h1 {
+    margin-bottom: 12vh;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
+    height: 61vh;
+    width: 43vw;
+  }
+
+  #btn {
+    margin-top: 9vh;
+  }
+
+  .exibirValor {
+    margin-top: 10vh;
+  }
+
+}
+
+@media (min-width: 931px) and (max-width: 1024px) {
+  main .inicio-main .imagem img {
+    width: 95%;
+  }
+
+  main .propagar .ttl h1 {
+    margin-bottom: 12vh;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
+    height: 58vh;
+    width: 46vw;
+  }
+
+  #btn {
+    margin-top: 11vh;
+  }
+
+  .exibirValor {
+    margin-top: 15vh;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+  main .inicio-main .imagem img {
     width: 100%;
+  }
+
+  main .propagar .ttl h1 {
+    margin-bottom: 12vh;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
+    height: 61vh;
+    width: 43vw;
+  }
+
+  #btn {
+    margin-top: 11vh;
+  }
+
+  .exibirValor {
+    margin-top: 15vh;
   }
 }
