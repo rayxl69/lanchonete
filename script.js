@@ -47,4 +47,5 @@ btn.addEventListener("click", () => {
     res.style.display = "none";
   }
   soma = 0
+  x = 0
 })
