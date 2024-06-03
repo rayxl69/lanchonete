@@ -497,7 +497,7 @@ main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte 
   text-align: center;
   display: none;
   font-size: 1.5em;
-  margin: 5vh 0;
+  margin: 5vh 0 2vh 0;
   font-weight: bold;
   font-family: "Poetsen One", cursive;
   color: #831100;
@@ -609,11 +609,11 @@ footer .rodape ul li a i {
   }
 
   #btn {
-    margin-top: 9vh;
+    margin-top: 5vh;
   }
 
   .exibirValor {
-    margin-top: 4vh;
+    margin-top: 3vh;
   }
 }
 
