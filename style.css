@@ -228,7 +228,7 @@ main .propagar {
   z-index: -2;
 }
 
-main .propagar.aberto {
+main .aberto {
   height: auto;
   overflow: hidden;
 }
