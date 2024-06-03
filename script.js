@@ -15,7 +15,7 @@ cards.forEach((el) => {
     } else {
       el.classList.remove("soma");
     }
-    if (!el.classList.contains("soma")) {
+    if (el.classList.contains("soma")) {
       el.style.borderColor = "orange";
     } else {
       el.style.borderColor = "ffd9a8";
