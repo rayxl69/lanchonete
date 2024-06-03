@@ -222,20 +222,38 @@ main .propagar {
   align-items: center;
   gap: 50px;
   box-shadow: 0 0 10px black;
+  height: 23vh;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
 }
 
-main .propagar .ttl h1 {
-  font-family: "Merienda", cursive;
-  padding: 30px 90px; 
-  background-color: #ffd9a8;
-  border-radius: 10px;
-  margin-bottom: 3vh;
+main .propagar.aberto {
+  height: auto;
+  overflow: hidden;
 }
 
 main .propagar .cardapio {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.abrirFechar {
+  cursor: pointer;
+}
+
+.abrirFechar button {
+  padding: 2vh 4vw;
+  background-color: orangered;
+  color: orange;
+  font-family: "Poetsen One", cursive;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 12px;
+  margin-bottom: 8vh; 
+  cursor: pointer;
 }
 
 main .propagar .cardapio .cards {
@@ -572,10 +590,6 @@ footer .rodape ul li a i {
     border: none;
   }
 
-  main .propagar .ttl h1 {
-    margin-bottom: 6vh;
-  }
-
   main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
   main .propagar .cardapio .ter_parte {
     justify-content: center;
@@ -606,7 +620,7 @@ footer .rodape ul li a i {
 
 
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 643px) {
   
   .nav {
     padding: 4vh 5vw;
@@ -644,10 +658,6 @@ footer .rodape ul li a i {
     border: none;
   }
 
-  main .propagar .ttl h1 {
-    margin-bottom: 12vh;
-  }
-
   main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
   main .propagar .cardapio .ter_parte {
     justify-content: center;
@@ -657,8 +667,8 @@ footer .rodape ul li a i {
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
   main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
   main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-    height: 68vh;
-    width: 47vw;
+    height: 57vh;
+    width: 46vw;
   }
 
   main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
@@ -675,6 +685,73 @@ footer .rodape ul li a i {
     margin-top: 10vh;
   }
 }
+
+@media (min-width: 644px) and (max-width: 768px) {
+  
+  .nav {
+    padding: 4vh 5vw;
+  }
+
+  .nav .lista-itens ul {
+    display: none;
+  }
+
+  .icone {
+    display: block;
+  }
+
+  .itens ul {
+    padding-top: 10vh;
+  }
+
+  .sidebar .itens {
+    margin-top: 13vh;
+  }
+
+  main .inicio-main {
+    flex-direction: column;
+  }
+
+  main .inicio-main .inicio-titulos {
+    padding-top: 2vh;
+  }
+
+  main .inicio-main .imagem img {
+    width: 75%;
+  }
+
+  main .propagar {
+    border: none;
+  }
+
+  main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
+  main .propagar .cardapio .ter_parte {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
+  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
+  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
+    height: 57vh;
+    width: 46vw;
+  }
+
+  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
+  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
+  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
+    width: 80%;
+  }
+
+  #btn {
+    margin-top: 9vh;
+  }
+
+  .exibirValor {
+    margin-top: 10vh;
+  }
+}
+
 
 @media (min-width: 769px) and (max-width: 930px) {
 
@@ -706,10 +783,6 @@ footer .rodape ul li a i {
     border: none;
   }
 
-  main .propagar .ttl h1 {
-    margin-bottom: 12vh;
-  }
-
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
   main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
   main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
@@ -736,10 +809,6 @@ footer .rodape ul li a i {
 @media (min-width: 931px) and (max-width: 1024px) {
   main .inicio-main .imagem img {
     width: 95%;
-  }
-
-  main .propagar .ttl h1 {
-    margin-bottom: 12vh;
   }
 
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
@@ -775,11 +844,6 @@ footer .rodape ul li a i {
     width: 100%;
   }
 
-  main .propagar .ttl h1 {
-    padding: 4vh 15vw;
-    margin-bottom: 12vh;
-  }
-
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
   main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
   main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
@@ -790,7 +854,7 @@ footer .rodape ul li a i {
   main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
   main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
   main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 70%;
+    width: 92.5%;
   }
 
   #btn {
