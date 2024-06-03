@@ -227,11 +227,11 @@ main .propagar {
   height: 23vh;
   overflow: hidden;
   position: relative;
+  transition: all 1.5s ease;
 }
 
 .aberto.propagar {
   height: auto;
-  transition: all 0.6s ease;
 }
 
 main .propagar .cardapio {
