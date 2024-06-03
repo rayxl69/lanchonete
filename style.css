@@ -553,7 +553,7 @@ footer .rodape ul li a i {
   }
 
   .sidebar .itens {
-    margin-top: 13vh;
+    margin-top: 12vh;
   }
 
   main .inicio-main {
@@ -625,7 +625,7 @@ footer .rodape ul li a i {
   }
 
   .sidebar .itens {
-    margin-top: 14vh;
+    margin-top: 13vh;
   }
 
   main .inicio-main {
@@ -657,7 +657,7 @@ footer .rodape ul li a i {
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
   main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
   main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-    height: 66vh;
+    height: 68vh;
     width: 47vw;
   }
 
@@ -691,7 +691,7 @@ footer .rodape ul li a i {
   }
 
   .sidebar .itens {
-    margin-top: 16vh;
+    margin-top: 15vh;
   }
 
   main .inicio-main {
@@ -783,14 +783,14 @@ footer .rodape ul li a i {
   main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
   main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
   main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
-    height: 62vh;
-    width: 43vw;
+    height: 64vh;
+    width: 30vw;
   }
 
   main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
   main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
   main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 75%;
+    width: 70%;
   }
 
   #btn {
