@@ -12,6 +12,7 @@ body {
   
 nav {
     position: fixed;
+    z-index: 99;
 }
   
 .nav {
@@ -225,12 +226,10 @@ main .propagar {
   height: 23vh;
   overflow: hidden;
   position: relative;
-  z-index: -2;
 }
 
-main .aberto {
+.aberto.propagar {
   height: auto;
-  overflow: hidden;
 }
 
 main .propagar .cardapio {
@@ -239,21 +238,21 @@ main .propagar .cardapio {
   gap: 20px;
 }
 
-.abrirFechar {
+.propagar button {
+  padding: 2vh 4vw;
+  background-color: orangered;
+  color: orange;
+  border-radius: 12px;
+  margin-bottom: 8vh; 
   cursor: pointer;
 }
 
-.abrirFechar button {
-  padding: 2vh 4vw;
-  background-color: orangered;
+.propagar button .text{
   color: orange;
   font-family: "Poetsen One", cursive;
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 12px;
-  margin-bottom: 8vh; 
-  cursor: pointer;
 }
 
 main .propagar .cardapio .cards {
@@ -497,8 +496,8 @@ main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte 
 .exibirValor {
   text-align: center;
   display: none;
-  font-size: 25px;
-  margin: 8vh 0 5vh 0;
+  font-size: 1.5em;
+  margin: 5vh 0;
   font-weight: bold;
   font-family: "Poetsen One", cursive;
   color: #831100;
@@ -614,7 +613,7 @@ footer .rodape ul li a i {
   }
 
   .exibirValor {
-    margin-top: 7vh;
+    margin-top: 4vh;
   }
 }
 
@@ -682,7 +681,7 @@ footer .rodape ul li a i {
   }
 
   .exibirValor {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
 }
 
@@ -748,7 +747,7 @@ footer .rodape ul li a i {
   }
 
   .exibirValor {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
 }
 
@@ -801,7 +800,7 @@ footer .rodape ul li a i {
   }
 
   .exibirValor {
-    margin-top: 10vh;
+    margin-top: 7vh;
   }
 
 }
@@ -829,7 +828,7 @@ footer .rodape ul li a i {
   }
 
   .exibirValor {
-    margin-top: 15vh;
+    margin-top: 11vh;
   }
 
 }
