@@ -227,6 +227,7 @@ main .propagar {
   height: 23vh;
   overflow: hidden;
   position: relative;
+  transition: all 0.6s ease;
 }
 
 .aberto.propagar {
