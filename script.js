@@ -15,6 +15,7 @@ cards.forEach((el) => {
     } else {
       el.classList.remove("soma");
     }
+
     if (el.classList.contains("soma")) {
       el.style.borderColor = "orange";
     } else {
@@ -46,4 +47,15 @@ btn.addEventListener("click", () => {
     res.style.display = "none";
   }
   soma = 0
+})
+
+let cardapio = document.querySelector('#cardapio');
+let cardapioCompleto = document.querySelector('.propagar');
+cardapio.addEventListener("click", () => {
+  cardapioCompleto.classList.toggle("aberto");
+  if (!cardapioCompleto.classList.contains("aberto")) {
+    cardapio.innerHTML = "ABRIR CARDÁPIO";
+  } else {
+    cardapio.innerHTML = "FECHAR CARDÁPIO";
+  }
 })
