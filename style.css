@@ -462,9 +462,10 @@ flex: 1;
 cursor: pointer;
 }
 
-.cards .card1 .imagem, .cards .card2 .imagem,
-.cards .card3 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem {
+.cards .card1 img, .cards .card2 img,
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,19 +604,21 @@ main .propagar .cardapio .ter_parte {
   width: 44vw;
 }
 
-.cards .card1 .imagem img, .cards .card2 .imagem img, 
-.cards .card3 .imagem img, .cards .card4 .imagem img,
-.cards .card5 .imagem img, .cards .card6 .imagem img {
+.cards .card1 img, .cards .card2 img, 
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
   width: 100%;
   height: 100%;
 }
 
-/*.cards .card1 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem {
-  height: 50%;
+.cards .card1 img, .cards .card2 img, 
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
+  width: 65%;
+  height: 65%;
 }
 
-.cards .card2 .imagem, .cards .card3 .imagem {
+/*.cards .card2 .imagem, .cards .card3 .imagem {
   height: 60%;
 }
 
@@ -688,11 +691,12 @@ main .propagar .cardapio .ter_parte {
   width: 46vw;
 }
 
-/* .cards .card1 .imagem, .cards .card2 .imagem, 
-.cards .card3 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem {
-  width: 100%;
-} */
+.cards .card1 img, .cards .card2 img, 
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
+  width: 70%;
+  height: 70%;
+}
 
 #btn {
   margin-top: 9vh;
@@ -760,11 +764,11 @@ main .propagar .cardapio .ter_parte {
   height: 58%;
 }*/
 
-.cards .card1 .imagem img, .cards .card2 .imagem img, 
-.cards .card3 .imagem img, .cards .card4 .imagem img,
-.cards .card5 .imagem img, .cards .card6 .imagem img {
-  width: 90%;
-  height: 90%;
+.cards .card1 img, .cards .card2 img, 
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
+  width: 60%;
+  height: 60%;
 }
 
 /*.cards .card1 h3, .cards .card2 h3, 
@@ -821,11 +825,11 @@ main .propagar {
   width: 43vw;
 }
 
-.cards .card1 .imagem img, .cards .card2 .imagem img, 
-.cards .card3 .imagem img, .cards .card4 .imagem img,
-.cards .card5 .imagem img, .cards .card6 .imagem img {
-  width: 90%;
-  height: 90%;
+.cards .card1 img, .cards .card2 img, 
+.cards .card3 img, .cards .card4 img,
+.cards .card5 img, .cards .card6 img {
+  width: 60%;
+  height: 60%;
 }
 
 /*.cards .card1 .imagem, .cards .card4 .imagem, .cards .card5 .imagem, .cards .card6 .imagem {
@@ -871,10 +875,14 @@ main .inicio-main .imagem img {
   width: 43vw;
 }
 
-.cards .card1 .imagem img, .cards .card2 .imagem img, 
-.cards .card3 .imagem img, .cards .card4 .imagem img,
-.cards .card5 .imagem img, .cards .card6 .imagem img {
+.cards .card2 img, 
+.cards .card3 img,
+.cards .card5 img, .cards .card6 img {
   width: 60%;
+}
+
+.cards .card1 img, .cards .card4 img {
+  width: 40%;
 }
 
 #btn {
@@ -911,11 +919,15 @@ main .inicio-main .imagem img {
   width: 30vw;
 }
 
-/*.cards .card1 .imagem, .cards .card2 .imagem, 
-.cards .card3 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem {
+.cards .card2 img, 
+.cards .card3 img,
+.cards .card5 img, .cards .card6 img {
   width: 92.5%;
-}*/
+}
+
+.cards .card1 img, .cards .card4 img {
+  width: 65.5%;
+}
 
 #btn {
   margin-top: 11vh;
