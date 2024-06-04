@@ -860,7 +860,7 @@ main .inicio-main .imagem img {
 .cards .card1 .imagem img, .cards .card2 .imagem img, 
 .cards .card3 .imagem img, .cards .card4 .imagem img,
 .cards .card5 .imagem img, .cards .card6 .imagem img {
-  width: 65%;
+  width: 50%;
 }
 
 #btn {
