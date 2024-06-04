@@ -143,6 +143,7 @@ background-color: #ffd9a8;
 
 .ultimo-item {
   justify-self: center;
+  grid-column: 1 / -1;
 }
 
 main {
