@@ -857,11 +857,11 @@ main .inicio-main .imagem img {
   width: 43vw;
 }
 
-/*.cards .card1 .imagem, .cards .card2 .imagem, 
-.cards .card3 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem {
-  width: 68%;
-}*/
+.cards .card1 .imagem img, .cards .card2 .imagem img, 
+.cards .card3 .imagem img, .cards .card4 .imagem img,
+.cards .card5 .imagem img, .cards .card6 .imagem img {
+  width: 80%;
+}
 
 #btn {
   margin-top: 11vh;
