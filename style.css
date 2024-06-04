@@ -1,299 +1,360 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-  
+
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
-  
+
 nav {
-    position: fixed;
-    z-index: 99;
+  position: fixed;
+  z-index: 99;
 }
-  
+
 .nav {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6vh 5vw;
-    background-color: rgb(255, 106, 0);
-    box-shadow: 0 0 3px black;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vh 5vw;
+  background-color: rgb(255, 106, 0);
+  box-shadow: 0 0 3px black;
 }
-  
+
 .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
-  
+
 .titulo p {
-    font-family: "Indie Flower", cursive;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
 }
 
 .nav .lista-itens ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+list-style: none;
+display: flex;
+justify-content: space-around;
 }
 
 .nav .lista-itens ul li{
-  margin: 0 1.5vw;
+margin: 0 1.5vw;
 }
 
 .nav .lista-itens ul li a {
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #020202;
-  font-family: "Merienda", cursive;
-  padding: 13px;
-  background-color: none;
-  border-radius: 15px;
-  transition: all .6s ease;
+text-decoration: none;
+font-size: 1.1em;
+font-weight: bold;
+color: #020202;
+font-family: "Merienda", cursive;
+padding: 13px;
+background-color: none;
+border-radius: 15px;
+transition: all .6s ease;
 }
 
 .nav .lista-itens ul li a:hover {
-  background-color: #f3ad5c;
+background-color: #f3ad5c;
 }
 
 .itens {
-    position: fixed;
-    left: -100%;
+  position: fixed;
+  left: -100%;
 }
 
-  
+
 .itens ul {
-  width: 100vw;
-  height: 100vh;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10vh;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
+width: 100vw;
+height: 100vh;
+list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 10vh;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: bold;
 }
 
 .itens ul li a{
-  font-style: italic;
-  color: #ff6a00;
-  text-decoration: none;
-  font-family: "Merienda", cursive;
+font-style: italic;
+color: #ff6a00;
+text-decoration: none;
+font-family: "Merienda", cursive;
 }
 
 .icone {
-  display: none;
-  cursor: pointer;
+display: none;
+cursor: pointer;
 }
 
 .icone p {
-  display: block;
-  height: 2px;
-  width: 15px;
-  background-color: #000000;
-  margin: 3px;
-  transition: all .6s ease;
+display: block;
+height: 2px;
+width: 15px;
+background-color: #000000;
+margin: 3px;
+transition: all .6s ease;
 }
 
 nav .sidebar .icone {
-  margin: 0;
+margin: 0;
 }
 
 nav .icone p:nth-child(2) {
-  background-color: #ad3e00;
+background-color: #ad3e00;
 }
 
 nav .sidebar .icone p:nth-child(1){
-  transform: rotate(45deg) translateY(4px); 
+transform: rotate(45deg) translateY(4px); 
 }
 
 nav .sidebar .icone p:nth-child(2){
-  transform: rotate(-45deg) translateY(-3px);
+transform: rotate(-45deg) translateY(-3px);
 }
 
 nav .sidebar .icone p:nth-child(3){
-  opacity: 0;
+opacity: 0;
 }
 
 .sidebar .itens {
-  margin-top: 10vh;
-  display: block;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 3;
-  background-color: #ffd9a8;
+margin-top: 10vh;
+display: block;
+left: 0;
+width: 100vw;
+height: 100vh;
+z-index: 3;
+background-color: #ffd9a8;
 }
 
 main {
-  padding: 18vh 5vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 110px;
+padding: 18vh 5vw;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 110px;
 }
 
 main .inicio-main {
-  /* margin-top: 0vh; */
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+/* margin-top: 0vh; */
+height: auto;
+display: flex;
+justify-content: space-between;
+gap: 30px;
 }
 
 main .inicio-main .imagem {
-  flex: 1;
+flex: 1;
 }
 
 main .inicio-main .imagem img {
-  width: 80%;
+width: 80%;
 }
 
 main .inicio-main .inicio-titulos {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding-top: 5vh;
+flex: 1;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+padding-top: 5vh;
 }
 
 main .inicio-main .inicio-titulos * {
-  display: block;
-  font-family: "Merienda", cursive;
+display: block;
+font-family: "Merienda", cursive;
 }
 
 main .inicio-main .inicio-titulos .principais-titulos h2 {
-  font-size: 37px;
-  color: #e22400;
-  font-weight: bold;
+font-size: 37px;
+color: #e22400;
+font-weight: bold;
 }
 
 main .inicio-main .inicio-titulos .principais-titulos span {
-  font-size: 25px;
-  font-weight: bold;
-  color: #ff6a00;
+font-size: 25px;
+font-weight: bold;
+color: #ff6a00;
 }
 
 main .inicio-main .inicio-titulos p {
-  font-weight: bold;
-  color: black;
+font-weight: bold;
+color: black;
 }
 
 main .inicio-main .inicio-titulos a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 main .inicio-main .inicio-titulos a button {
-  background-color: #ff6a00;
-  border-radius: 10px;
-  padding: 15px 25px;
-  color: white;
-  font-family: "Merienda", cursive;
-  font-size: 15px;
-  margin-top: 3vh;
-  cursor: pointer;
+background-color: #ff6a00;
+border-radius: 10px;
+padding: 15px 25px;
+color: white;
+font-family: "Merienda", cursive;
+font-size: 15px;
+margin-top: 3vh;
+cursor: pointer;
 }
 
 main .imagem img{
-  height: 100%;
-  width: 100vw;
+height: 100%;
+width: 100vw;
 }
 
 main .propagar {
-  padding: 4vh 2vw;
-  border: solid 6px #a67b01;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  box-shadow: 0 0 10px black;
-  height: 23vh;
-  overflow: hidden;
-  position: relative;
+padding: 4vh 2vw;
+border: solid 6px #a67b01;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+box-shadow: 0 0 10px black;
+height: 23vh;
+overflow: hidden;
+position: relative;
 }
 
 .aberto.propagar {
-  height: auto;
+height: auto;
 }
 
 main .propagar .cardapio {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 .propagar button {
-  padding: 2vh 4vw;
-  background-color: orangered;
-  color: orange;
-  border-radius: 12px;
-  margin-bottom: 8vh; 
-  cursor: pointer;
+padding: 2vh 4vw;
+background-color: orangered;
+color: orange;
+border-radius: 12px;
+margin-bottom: 8vh; 
+cursor: pointer;
+transition: all 0.6s ease;
 }
 
 .propagar button .text{
-  color: orange;
-  font-family: "Poetsen One", cursive;
-  font-size: 2em;
-  font-weight: bold;
-  text-transform: uppercase;
+color: orange;
+font-family: "Poetsen One", cursive;
+font-size: 2em;
+font-weight: bold;
+text-transform: uppercase;
 }
 
-main .propagar .cardapio .cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
+.cards {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
 }
 
-main .propagar .cardapio .card1 {
-  border: 2px solid #ffd9a8;
+.cards .card1 {
+border: 2px solid #ffd9a8;
+height: 40vh;
+width: 17vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+}
+
+.cards .card1 .imagem {
+flex: 3;
+height: 50%;
+width: 65%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCj7myGaLAw1xJrsXbrN93RdE6Flwq--ji0Q&usqp=CAU');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.cards .card1 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-family: "Merienda", cursive;
+}
+
+.cards .card2 {
+border: 2px solid #ffecd4;
+height: 40vh;
+width: 17vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+}
+
+.cards .card2 .imagem {
+flex: 3;
+height: 50%;
+width: 100%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMjHh31MwbqjeQH5L1po1q0LMwzIS_Fz-4Q&usqp=CAU');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+.cards .card2 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 16.5px;
+font-family: "Merienda", cursive;
+}
+
+.cards .card3 {
+  border: 2px solid #ffecd4;
   height: 40vh;
   width: 17vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  }
+
+.cards .card3 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-family: "Merienda", cursive;
 }
 
-main .propagar .cardapio .card1 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 65%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCj7myGaLAw1xJrsXbrN93RdE6Flwq--ji0Q&usqp=CAU');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.cards .card3 .imagem {
+flex: 3;
+height: 50%;
+width: 100%;
+background-image: url('https://imagens.jotaja.com/produtos/2682/587B2A68D0B454B42516D95CAD1E21683B1FDA8CA9764EB18989B571071D7033.jpeg');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
 
-main .propagar .cardapio .card1 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .card2 {
+.cards .card4 {
   border: 2px solid #ffecd4;
   height: 40vh;
   width: 17vw;
@@ -303,44 +364,27 @@ main .propagar .cardapio .card2 {
   border-radius: 10px;
 }
 
-main .propagar .cardapio .card2 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 100%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMjHh31MwbqjeQH5L1po1q0LMwzIS_Fz-4Q&usqp=CAU');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.cards .card4 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-family: "Merienda", cursive;
 }
 
-main .propagar .cardapio .card2 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16.5px;
-  font-family: "Merienda", cursive;
+.cards .card4 .imagem {
+flex: 3;
+height: 50%;
+width: 100%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4ljZIC6IaBpVqcLt1T3MD4FdGnLbYdhY1jeLC7E08ZTJGdt5IIAxRsm5&s=10');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
 
-main .propagar .cardapio .seg_parte {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-main .propagar .cardapio .seg_parte h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .seg_parte .card3 {
+.cards .card5 {
   border: 2px solid #ffecd4;
   height: 40vh;
   width: 17vw;
@@ -348,29 +392,29 @@ main .propagar .cardapio .seg_parte .card3 {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  }
+
+.cards .card5 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-family: "Merienda", cursive;
 }
 
-main .propagar .cardapio .seg_parte .card3 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 100%;
-  background-image: url('https://imagens.jotaja.com/produtos/2682/587B2A68D0B454B42516D95CAD1E21683B1FDA8CA9764EB18989B571071D7033.jpeg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.cards .card5 .imagem {
+flex: 3;
+height: 50%;
+width: 100%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhgtGYQ1Fzh3CNblWk2A0-2srWGkP8Zjj1A&usqp=CAU');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
 
-main .propagar .cardapio .seg_parte .card4 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .seg_parte .card4 {
+.cards .card6 {
   border: 2px solid #ffecd4;
   height: 40vh;
   width: 17vw;
@@ -378,173 +422,96 @@ main .propagar .cardapio .seg_parte .card4 {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  }
+
+.cards .card6 h3 {
+flex: 1;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-family: "Merienda", cursive;
 }
 
-main .propagar .cardapio .seg_parte .card4 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 100%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4ljZIC6IaBpVqcLt1T3MD4FdGnLbYdhY1jeLC7E08ZTJGdt5IIAxRsm5&s=10');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.cards .card6 .imagem {
+flex: 3;
+height: 50%;
+width: 100%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJgeq0UepTPfQextfRczjCy3_QMGTV6QahIdFgg75LmhprRln6lTnfFmb&s=10');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
 
-main .propagar .cardapio .seg_parte .card4 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
-}
 
-main .propagar .cardapio .ter_parte {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-main .propagar .cardapio .ter_parte h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .ter_parte .card5 {
-  border: 2px solid #ffecd4;
-  height: 40vh;
-  width: 17vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-}
-
-main .propagar .cardapio .ter_parte .card5 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 100%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhgtGYQ1Fzh3CNblWk2A0-2srWGkP8Zjj1A&usqp=CAU');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-main .propagar .cardapio .ter_parte .card6 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .ter_parte .card6 {
-  border: 2px solid #ffecd4;
-  height: 40vh;
-  width: 17vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-}
-
-main .propagar .cardapio .ter_parte .card6 .imagem {
-  flex: 2;
-  height: 50%;
-  width: 100%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJgeq0UepTPfQextfRczjCy3_QMGTV6QahIdFgg75LmhprRln6lTnfFmb&s=10');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-main .propagar .cardapio .ter_parte .card6 h3 {
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
-}
-
-main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-  cursor: pointer;
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+cursor: pointer;
 }
 
 #btn {
-  padding: 3vh 15vw;
-  color: black;
-  border-radius: 10px;
-  background-color: orange;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
+padding: 3vh 11vw;
+color: black;
+border-radius: 10px;
+background-color: orange;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
 }
 
 .exibirValor {
-  text-align: center;
-  display: none;
-  font-size: 1.5em;
-  margin: 5vh 0 2vh 0;
-  font-weight: bold;
-  font-family: "Poetsen One", cursive;
-  color: #831100;
+text-align: center;
+display: none;
+font-size: 1.5em;
+margin: 0vh 0 2vh 0;
+font-weight: bold;
+font-family: "Poetsen One", cursive;
+color: #831100;
 }
 
 footer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  text-align: center;
-  width: 100vw;
-  height: 100px;
-  background-color: #ffd977;
-  padding: 10vh 0;
-  border-radius: 10px 10px 0 0;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+text-align: center;
+width: 100vw;
+height: 100px;
+background-color: #ffd977;
+padding: 10vh 0;
+border-radius: 10px 10px 0 0;
 }
 
 footer .imagem img {
-  width: 100%;
-  height: 50px;
-  transform: rotate(180deg);
-  position: absolute;
-  top: -15px;
-  left: 0;
+width: 100%;
+height: 50px;
+transform: rotate(180deg);
+position: absolute;
+top: -15px;
+left: 0;
 }
 
 footer .rodape ul {
-  margin: 3vh 0 0 0;
-  list-style: none;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 5px;
+margin: 3vh 0 0 0;
+list-style: none;
+width: 100vw;
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 5px;
 }
 
 footer .rodape ul li a{
-  text-decoration: none;
+text-decoration: none;
 }
 
 footer .rodape ul li a i {
-  font-size: 40px;
-  color: black;
+font-size: 40px;
+color: black;
 }
 
 
@@ -554,314 +521,328 @@ footer .rodape ul li a i {
 
 @media (max-width: 480px) {
 
-  .nav {
-    padding: 4vh 5vw;
-  }
+.nav {
+  padding: 4vh 5vw;
+}
 
-  .nav .lista-itens ul {
-    display: none;
-  }
+.nav .lista-itens ul {
+  display: none;
+}
 
-  .icone {
-    display: block;
-  }
+.icone {
+  display: block;
+}
 
-  .itens ul {
-    padding-top: 10vh;
-  }
+.itens ul {
+  padding-top: 10vh;
+}
 
-  .sidebar .itens {
-    margin-top: 12vh;
-  }
+.sidebar .itens {
+  margin-top: 12vh;
+}
 
-  main .inicio-main {
-    flex-direction: column;
-  }
+main .inicio-main {
+  flex-direction: column;
+}
 
-  main .inicio-main .imagem img {
-    width: 100%;
-  }
+main .inicio-main .imagem img {
+  width: 100%;
+}
 
-  main .inicio-main .inicio-titulos {
-    padding-top: 0;
-  }
+main .inicio-main .inicio-titulos {
+  padding-top: 0;
+}
 
-  main .propagar {
-    border: none;
-  }
+main .propagar {
+  border: none;
+}
 
-  main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
-  main .propagar .cardapio .ter_parte {
-    justify-content: center;
-    gap: 10px;
-  }
+/* main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
+main .propagar .cardapio .ter_parte {
+  justify-content: center;
+  gap: 10px;
+} */
 
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-    height: 40vh;
-    width: 46.5vw;
-  }
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 40vh;
+  width: 44vw;
+}
 
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 100%;
-  }
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 100%;
+}
 
-  #btn {
-    margin-top: 5vh;
-  }
+#btn {
+  margin-top: 5vh;
+}
 
-  .exibirValor {
-    margin-top: 0;
-  }
+.exibirValor {
+  margin-top: 0;
+}
 }
 
 
 
 @media (min-width: 481px) and (max-width: 643px) {
-  
-  .nav {
-    padding: 4vh 5vw;
-  }
 
-  .nav .lista-itens ul {
-    display: none;
-  }
-
-  .icone {
-    display: block;
-  }
-
-  .itens ul {
-    padding-top: 10vh;
-  }
-
-  .sidebar .itens {
-    margin-top: 13vh;
-  }
-
-  main .inicio-main {
-    flex-direction: column;
-  }
-
-  main .inicio-main .inicio-titulos {
-    padding-top: 2vh;
-  }
-
-  main .inicio-main .imagem img {
-    width: 75%;
-  }
-
-  main .propagar {
-    border: none;
-  }
-
-  main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
-  main .propagar .cardapio .ter_parte {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-    height: 57vh;
-    width: 46vw;
-  }
-
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 100%;
-  }
-
-  #btn {
-    margin-top: 9vh;
-  }
-
-  .exibirValor {
-    margin-top: 7vh;
-  }
+.nav {
+  padding: 4vh 5vw;
 }
 
+.nav .lista-itens ul {
+  display: none;
+}
+
+.icone {
+  display: block;
+}
+
+.itens ul {
+  padding-top: 10vh;
+}
+
+.sidebar .itens {
+  margin-top: 13vh;
+}
+
+main .inicio-main {
+  flex-direction: column;
+}
+
+main .inicio-main .inicio-titulos {
+  padding-top: 2vh;
+}
+
+main .inicio-main .imagem img {
+  width: 75%;
+}
+
+main .propagar {
+  border: none;
+}
+
+/* main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
+main .propagar .cardapio .ter_parte {
+  justify-content: center;
+  gap: 10px;
+} */
+
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 57vh;
+  width: 46vw;
+}
+
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 100%;
+}
+
+#btn {
+  margin-top: 9vh;
+}
+
+.exibirValor {
+  margin-top: 7vh;
+}
+}
+
+
+
 @media (min-width: 644px) and (max-width: 768px) {
-  
-  .nav {
-    padding: 4vh 5vw;
-  }
 
-  .nav .lista-itens ul {
-    display: none;
-  }
+.nav {
+  padding: 4vh 5vw;
+}
 
-  .icone {
-    display: block;
-  }
+.nav .lista-itens ul {
+  display: none;
+}
 
-  .itens ul {
-    padding-top: 10vh;
-  }
+.icone {
+  display: block;
+}
 
-  .sidebar .itens {
-    margin-top: 13vh;
-  }
+.itens ul {
+  padding-top: 10vh;
+}
 
-  main .inicio-main {
-    flex-direction: column;
-  }
+.sidebar .itens {
+  margin-top: 13vh;
+}
 
-  main .inicio-main .inicio-titulos {
-    padding-top: 2vh;
-  }
+main .inicio-main {
+  flex-direction: column;
+}
 
-  main .inicio-main .imagem img {
-    width: 75%;
-  }
+main .inicio-main .inicio-titulos {
+  padding-top: 2vh;
+}
 
-  main .propagar {
-    border: none;
-  }
+main .inicio-main .imagem img {
+  width: 75%;
+}
 
-  main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
-  main .propagar .cardapio .ter_parte {
-    justify-content: center;
-    gap: 10px;
-  }
+main .propagar {
+  border: none;
+}
 
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6 {
-    height: 57vh;
-    width: 46vw;
-  }
+/* main .propagar .cardapio .cards, main .propagar .cardapio .seg_parte, 
+main .propagar .cardapio .ter_parte {
+  justify-content: center;
+  gap: 10px;
+} */
 
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 80%;
-  }
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 57vh;
+  width: 46vw;
+}
 
-  #btn {
-    margin-top: 9vh;
-  }
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 90%;
+}
 
-  .exibirValor {
-    margin-top: 7vh;
-  }
+#btn {
+  margin-top: 9vh;
+}
+
+.exibirValor {
+  margin-top: 4vh;
+}
 }
 
 
 @media (min-width: 769px) and (max-width: 930px) {
 
-  .nav .lista-itens ul {
-    display: none;
-  }
+.nav .lista-itens ul {
+  display: none;
+}
 
-  .icone {
-    display: block;
-  }
+.icone {
+  display: block;
+}
 
-  .itens ul {
-    padding-top: 15vh;
-  }
+.itens ul {
+  padding-top: 15vh;
+}
 
-  .sidebar .itens {
-    margin-top: 15vh;
-  }
+.sidebar .itens {
+  margin-top: 15vh;
+}
 
-  main .inicio-main {
-    flex-direction: column;
-  }
+main .inicio-main {
+  flex-direction: column;
+}
 
-  main .inicio-main .imagem img {
-    width: 70%;
-  }
+main .inicio-main .imagem img {
+  width: 70%;
+}
 
-  main .propagar {
-    border: none;
-  }
+main .propagar {
+  border: none;
+}
 
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
-    height: 61vh;
-    width: 43vw;
-  }
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 61vh;
+  width: 43vw;
+}
 
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 80%;
-  }
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 90%;
+}
 
-  #btn {
-    margin-top: 9vh;
-  }
+#btn {
+  margin-top: 9vh;
+}
 
-  .exibirValor {
-    margin-top: 7vh;
-  }
+.exibirValor {
+  margin-top: 2vh;
+  font-size: 2em;
+}
 
 }
 
 @media (min-width: 931px) and (max-width: 1024px) {
-  main .inicio-main .imagem img {
-    width: 95%;
-  }
+main .inicio-main .imagem img {
+  width: 95%;
+}
 
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
-    height: 58vh;
-    width: 43vw;
-  }
+.propagar button:hover{
+  transform: scale(1.1);
+}
 
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 68%;
-  }
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 58vh;
+  width: 43vw;
+}
 
-  #btn {
-    margin-top: 11vh;
-  }
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 68%;
+}
 
-  .exibirValor {
-    margin-top: 11vh;
-  }
+#btn {
+  margin-top: 11vh;
+}
+
+.exibirValor {
+  margin-top: 4vh;
+  font-size: 2em;
+}
 
 }
 
+
+
 @media (min-width: 1025px) {
 
-  main .inicio-main {
-    height: 80vh;
-  }
+main .inicio-main {
+  height: 80vh;
+}
 
-  main .inicio-main .imagem img {
-    width: 100%;
-  }
+main .inicio-main .imagem img {
+  width: 100%;
+}
 
-  main .propagar .cardapio .card1, main .propagar .cardapio .card2, 
-  main .propagar .cardapio .seg_parte .card3, main .propagar .cardapio .seg_parte .card4,
-  main .propagar .cardapio .ter_parte .card5, main .propagar .cardapio .ter_parte .card6{
-    height: 64vh;
-    width: 30vw;
-  }
+.propagar button:hover{
+  transform: scale(1.1);
+}
 
-  main .propagar .cardapio .card1 .imagem, main .propagar .cardapio .card2 .imagem, 
-  main .propagar .cardapio .seg_parte .card3 .imagem, main .propagar .cardapio .seg_parte .card4 .imagem,
-  main .propagar .cardapio .ter_parte .card5 .imagem, main .propagar .cardapio .ter_parte .card6 .imagem {
-    width: 92.5%;
-  }
+.cards .card1, .cards .card2, 
+.cards .card3, .cards .card4,
+.cards .card5, .cards .card6 {
+  height: 64vh;
+  width: 30vw;
+}
 
-  #btn {
-    margin-top: 11vh;
-  }
+.cards .card1 .imagem, .cards .card2 .imagem, 
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  width: 92.5%;
+}
 
-  .exibirValor {
-    font-size: 2em;
-  }
+#btn {
+  margin-top: 11vh;
+}
+
+.exibirValor {
+  font-size: 2em;
+}
 }
