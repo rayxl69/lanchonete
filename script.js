@@ -55,3 +55,16 @@ function abrirFechar() {
     cardapio.innerHTML = "FECHAR CARDÁPIO";
   }
 }
+
+
+function checkOrientation() {
+    if (window.innerWidth > window.innerHeight) {
+        document.body.style.display = 'none';
+    } else {
+        document.body.style.display = 'block';
+    }
+}
+
+window.addEventListener('load', checkOrientation);
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
