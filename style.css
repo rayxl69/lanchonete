@@ -542,6 +542,13 @@ color: black;
     width: 50%;
     height: 50%;
 }
+
+  .cards .card1, .cards .card2, 
+  .cards .card3, .cards .card4,
+  .cards .card5, .cards .card6 {
+    height: 55vh;
+    width: 44vw;
+}
 }
 
 
