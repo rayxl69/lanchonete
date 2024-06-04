@@ -261,7 +261,7 @@ text-transform: uppercase;
 width: 100%;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-gap: 10px;
+grid-gap: 10px;
 }
 
 .cards .card1 {
@@ -430,7 +430,7 @@ width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 15px;
+font-size: 20px;
 font-family: "Merienda", cursive;
 }
 
