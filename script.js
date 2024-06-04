@@ -10,7 +10,11 @@ let cards = document.querySelectorAll(".cardzao");
 let soma = 0
 cards.forEach((el) => {
   el.addEventListener("click", () => {
-    el.classList.toggle("soma");
+    if (!el.classList.contains("soma") {
+      el.classList.add("soma");
+    } else {
+      el.classList.remove("soma");
+    }
     if (el.classList.contains("soma")) {
       el.style.borderColor = "orange";
     } else {
