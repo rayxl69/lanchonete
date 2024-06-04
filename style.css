@@ -133,7 +133,7 @@ display: block;
 left: 0;
 width: 100vw;
 height: 100vh;
-z-index: 3;
+z-index: 20;
 background-color: #ffd9a8;
 }
 
