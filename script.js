@@ -59,9 +59,9 @@ function abrirFechar() {
 
 function checkOrientation() {
     if (window.innerWidth > window.innerHeight) {
-        document.body.style.display = 'none';
+        document.querySelector('.propagar').style.display = 'none';
     } else {
-        document.body.style.display = 'block';
+        document.querySelector('.propagar').style.display = 'flex';
     }
 }
 
