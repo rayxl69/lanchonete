@@ -860,7 +860,7 @@ main .inicio-main .imagem img {
 .cards .card1 .imagem img, .cards .card2 .imagem img, 
 .cards .card3 .imagem img, .cards .card4 .imagem img,
 .cards .card5 .imagem img, .cards .card6 .imagem img {
-  width: 50%;
+  width: 60%;
 }
 
 #btn {
@@ -869,7 +869,7 @@ main .inicio-main .imagem img {
 
 .exibirValor {
   margin-top: 4vh;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 }
