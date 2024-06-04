@@ -584,8 +584,8 @@ main .propagar .cardapio .ter_parte {
 .cards .card1 .imagem img, .cards .card2 .imagem img, 
 .cards .card3 .imagem img, .cards .card4 .imagem img,
 .cards .card5 .imagem img, .cards .card6 .imagem img {
-  width: 75%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
 }
 
 .cards .card1 .imagem, .cards .card2 .imagem,
