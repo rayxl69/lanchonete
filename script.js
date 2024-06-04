@@ -12,12 +12,9 @@ cards.forEach((el) => {
   el.addEventListener("click", () => {
     if (!el.classList.contains("soma")) {
       el.classList.add("soma");
-    } else {
-      el.classList.remove("soma");
-    }
-    if (el.classList.contains("soma")) {
       el.style.borderColor = "orange";
     } else {
+      el.classList.remove("soma");
       el.style.borderColor = "ffd9a8";
     }
   });
