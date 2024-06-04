@@ -141,6 +141,10 @@ z-index: 20;
 background-color: #ffd9a8;
 }
 
+.ultimo-item {
+  justify-self: center;
+}
+
 main {
 padding: 18vh 5vw;
 text-align: center;
