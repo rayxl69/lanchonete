@@ -275,7 +275,7 @@ border-radius: 10px;
 }
 
 .cards .card1 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 65%;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCj7myGaLAw1xJrsXbrN93RdE6Flwq--ji0Q&usqp=CAU');
@@ -305,7 +305,7 @@ border-radius: 10px;
 }
 
 .cards .card2 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 100%;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMjHh31MwbqjeQH5L1po1q0LMwzIS_Fz-4Q&usqp=CAU');
@@ -345,7 +345,7 @@ font-family: "Merienda", cursive;
 }
 
 .cards .card3 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 100%;
 background-image: url('https://gifs.eco.br/wp-content/uploads/2023/03/imagens-de-x-bacon-png-0.png'); /* https://imagens.jotaja.com/produtos/2682/587B2A68D0B454B42516D95CAD1E21683B1FDA8CA9764EB18989B571071D7033.jpeg */
@@ -375,7 +375,7 @@ font-family: "Merienda", cursive;
 }
 
 .cards .card4 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 100%;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4ljZIC6IaBpVqcLt1T3MD4FdGnLbYdhY1jeLC7E08ZTJGdt5IIAxRsm5&s=10');
@@ -405,7 +405,7 @@ font-family: "Merienda", cursive;
 }
 
 .cards .card5 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 100%;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhgtGYQ1Fzh3CNblWk2A0-2srWGkP8Zjj1A&usqp=CAU');
@@ -435,7 +435,7 @@ font-family: "Merienda", cursive;
 }
 
 .cards .card6 .imagem {
-flex: 3;
+flex: 2;
 height: 50%;
 width: 100%;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJgeq0UepTPfQextfRczjCy3_QMGTV6QahIdFgg75LmhprRln6lTnfFmb&s=10');
