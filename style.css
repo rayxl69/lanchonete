@@ -879,11 +879,11 @@ main .inicio-main .imagem img {
 .cards .card2 img, 
 .cards .card3 img,
 .cards .card5 img, .cards .card6 img {
-  width: 100%;
+  width: 80%;
 }
 
 .cards .card1 img, .cards .card4 img {
-  width: 100%;
+  width: 70%;
 }
 
 #btn {
