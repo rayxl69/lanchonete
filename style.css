@@ -76,11 +76,14 @@ background-color: #f3ad5c;
 width: 100vw;
 height: 100vh;
 list-style: none;
-display: flex;
+/*display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-gap: 10vh;
+gap: 10vh;*/
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 3vh 3vw;
 text-transform: uppercase;
 font-size: 20px;
 font-weight: bold;
