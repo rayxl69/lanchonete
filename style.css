@@ -595,7 +595,7 @@ main .propagar .cardapio .ter_parte {
 }
 
 .cards .card2 .imagem, .cards .card3 .imagem {
-  height: 60%;
+  height: 60% !important;
 }
 
 .cards .card1 h3, .cards .card2 h3, 
