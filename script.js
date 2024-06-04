@@ -59,7 +59,7 @@ function abrirFechar() {
 
 function checkOrientation() {
     if (window.innerWidth > window.innerHeight) {
-        document.querySelector('.propagar').style.display = 'none';
+        document.querySelector('.cards').style.gridTemplateColumns = 1 + 'fr';
     } else {
         document.querySelector('.propagar').style.display = 'flex';
     }
