@@ -57,7 +57,7 @@ function abrirFechar() {
 }
 
 
-function checkOrientation() {
+/*function checkOrientation() {
     if (window.innerWidth > window.innerHeight) {
       document.body.style.display = 'none';
     } else {
@@ -67,4 +67,4 @@ function checkOrientation() {
 
 window.addEventListener('load', checkOrientation);
 window.addEventListener('resize', checkOrientation);
-window.addEventListener('orientationchange', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);*/
