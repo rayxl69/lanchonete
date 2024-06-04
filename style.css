@@ -444,6 +444,9 @@ background-position: center center;
 background-repeat: no-repeat;
 }
 
+.soma {
+  border-color: orange;
+}
 
 .cards .card1, .cards .card2, 
 .cards .card3, .cards .card4,
