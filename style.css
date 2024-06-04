@@ -608,8 +608,8 @@ main .propagar .cardapio .ter_parte {
 .cards .card1 img, .cards .card2 img, 
 .cards .card3 img, .cards .card4 img,
 .cards .card5 img, .cards .card6 img {
-  width: 75%;
-  height: 75%;
+  width: 55%;
+  height: 55%;
 }
 
 /*.cards .card1 img, .cards .card2 img, 
