@@ -10,11 +10,7 @@ let cards = document.querySelectorAll(".cardzao");
 let soma = 0
 cards.forEach((el) => {
   el.addEventListener("click", () => {
-    if (!el.classList.contains("soma")) {
-      el.classList.add("soma");
-    } else {
-      el.classList.remove("soma");
-    }
+    el.classList.toggle("soma");
     if (el.classList.contains("soma")) {
       el.style.borderColor = "orange";
     } else {
@@ -41,7 +37,7 @@ btn.addEventListener("click", () => {
   
   let res = document.querySelector(".exibirValor")
   res.style.display = "block";
-  res.innerHTML = `O TOTAL A PAGAR SERÁ: R$${soma},00`
+  res.innerHTML = `O TOTAL A PAGAR SERÁ: R$${soma.toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
   if (soma === 0) {
     res.style.display = "none";
   }
