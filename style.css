@@ -535,7 +535,14 @@ color: black;
 
 
 
-
+@media (orientation: landscape) {
+  .cards .card1 .imagem img, .cards .card2 .imagem img, 
+  .cards .card3 .imagem img, .cards .card4 .imagem img,
+  .cards .card5 .imagem img, .cards .card6 .imagem img {
+    width: 50%;
+    height: 50%;
+}
+}
 
 
 @media (max-width: 480px) {
