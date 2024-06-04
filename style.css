@@ -96,6 +96,10 @@ font-weight: bold;
   background-color: orange;
 }
 
+.itens ul li:nth-child(2) {
+  margin-right: 3vw;
+}
+
 .itens ul li a{
 font-style: italic;
 color: #ff6a00;
