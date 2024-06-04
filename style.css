@@ -90,11 +90,17 @@ font-size: 20px;
 font-weight: bold;
 }
 
+.itens ul li {
+  padding: 3vh 5vw;
+  border-radius: 12px;
+  background-color: orange;
+}
+
 .itens ul li a{
 font-style: italic;
 color: #ff6a00;
 text-decoration: none;
-font-family: "Merienda", cursive;
+font-family: "Poetsen One", cursive;
 }
 
 .icone {
