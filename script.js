@@ -5,7 +5,7 @@ function toggleSidebar() {
   main.classList.toggle("sidebar");
 }
 
-let cards = document.querySelectorAll("#cardzao");
+let cards = document.querySelectorAll(".cardzao");
 
 let soma = 0
 cards.forEach((el) => {
