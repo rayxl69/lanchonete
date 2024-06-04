@@ -466,6 +466,7 @@ cursor: pointer;
 .cards .card3 img, .cards .card4 img,
 .cards .card5 img, .cards .card6 img {
   height: auto;
+  flex: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
