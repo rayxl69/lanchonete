@@ -462,6 +462,13 @@ flex: 2;
 cursor: pointer;
 }
 
+.cards .card1 .imagem, .cards .card2 .imagem,
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem {
+  display: flex;
+  align-items: center;
+}
+
 #btn {
 padding: 3vh 11vw;
 color: black;
@@ -590,12 +597,12 @@ main .propagar .cardapio .ter_parte {
 
 .cards .card1 .imagem, .cards .card2 .imagem,
 .cards .card3 .imagem, .cards .card4 .imagem,
-.cards .card5 .imagem, .cards .card6 .imagem{
+.cards .card5 .imagem, .cards .card6 .imagem {
   height: 50%;
 }
 
 .cards .card2 .imagem, .cards .card3 .imagem {
-  height: 60% !important;
+  height: 60%;
 }
 
 .cards .card1 h3, .cards .card2 h3, 
