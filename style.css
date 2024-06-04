@@ -585,6 +585,20 @@ main .propagar .cardapio .ter_parte {
 .cards .card3 .imagem img, .cards .card4 .imagem img,
 .cards .card5 .imagem img, .cards .card6 .imagem img {
   width: 75%;
+  height: 75%;
+}
+
+.cards .card1 .imagem, .cards .card2 .imagem,
+.cards .card3 .imagem, .cards .card4 .imagem,
+.cards .card5 .imagem, .cards .card6 .imagem{
+  height: 50%;
+}
+
+.cards .card1 h3, .cards .card2 h3, 
+.cards .card3 h3, .cards .card4 h3,
+.cards .card5 h3, .cards .card6 h3 {
+  flex: 4;
+  align-items: center;
 }
 
 #btn {
