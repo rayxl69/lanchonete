@@ -61,7 +61,7 @@ function checkOrientation() {
     if (window.innerWidth > window.innerHeight) {
         document.querySelector('.cards').style.gridTemplateColumns = 1 + 'fr';
     } else {
-        document.querySelector('.propagar').style.display = 'flex';
+        document.querySelector('.cards').style.gridTemplateColumns = 'repeat('+2+', '+1+'fr';
     }
 }
 
