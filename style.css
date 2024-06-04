@@ -291,7 +291,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -323,7 +323,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -343,7 +343,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -375,7 +375,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -407,7 +407,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -439,7 +439,7 @@ flex: 1;
 width: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 font-size: 20px;
 font-family: "Merienda", cursive;
 }
@@ -742,9 +742,9 @@ main .propagar .cardapio .ter_parte {
   width: 46vw;
 }
 
-.cards .card1 .imagem, .cards .card4 .imagem {
+/*.cards .card1 .imagem, .cards .card4 .imagem {
   height: 58%;
-}
+}*/
 
 .cards .card1 .imagem img, .cards .card2 .imagem img, 
 .cards .card3 .imagem img, .cards .card4 .imagem img,
@@ -753,12 +753,12 @@ main .propagar .cardapio .ter_parte {
   height: 90%;
 }
 
-.cards .card1 h3, .cards .card2 h3, 
+/*.cards .card1 h3, .cards .card2 h3, 
 .cards .card3 h3, .cards .card4 h3,
 .cards .card5 h3, .cards .card6 h3 {
   flex: 4;
   align-items: center;
-}
+}*/
 
 #btn {
   margin-top: 9vh;
@@ -814,21 +814,21 @@ main .propagar {
   height: 90%;
 }
 
-.cards .card1 .imagem, .cards .card4 .imagem, .cards .card5 .imagem, .cards .card6 .imagem {
+/*.cards .card1 .imagem, .cards .card4 .imagem, .cards .card5 .imagem, .cards .card6 .imagem {
   height: 70%;
-}
+}*/
 
 /* .cards .card1 .imagem img {
   width: 80%;
   height: 80%;
 } */
 
-.cards .card1 h3, .cards .card2 h3, 
+/*.cards .card1 h3, .cards .card2 h3, 
 .cards .card3 h3, .cards .card4 h3,
 .cards .card5 h3, .cards .card6 h3 {
   flex: 4;
   align-items: center;
-}
+}*/
 
 #btn {
   margin-top: 9vh;
@@ -857,11 +857,11 @@ main .inicio-main .imagem img {
   width: 43vw;
 }
 
-.cards .card1 .imagem, .cards .card2 .imagem, 
+/*.cards .card1 .imagem, .cards .card2 .imagem, 
 .cards .card3 .imagem, .cards .card4 .imagem,
 .cards .card5 .imagem, .cards .card6 .imagem {
   width: 68%;
-}
+}*/
 
 #btn {
   margin-top: 11vh;
@@ -897,11 +897,11 @@ main .inicio-main .imagem img {
   width: 30vw;
 }
 
-.cards .card1 .imagem, .cards .card2 .imagem, 
+/*.cards .card1 .imagem, .cards .card2 .imagem, 
 .cards .card3 .imagem, .cards .card4 .imagem,
 .cards .card5 .imagem, .cards .card6 .imagem {
   width: 92.5%;
-}
+}*/
 
 #btn {
   margin-top: 11vh;
