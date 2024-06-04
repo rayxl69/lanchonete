@@ -59,14 +59,9 @@ function abrirFechar() {
 
 function checkOrientation() {
     if (window.innerWidth > window.innerHeight) {
-      document.querySelector('.cards').style.gridTemplateColumns = 1 + 'fr';
-      let imagens = document.querySelectorAll('cardzao img');
-      imagens.forEach((el) => {
-        el.style.height = 50 + "%";
-        el.style.width = 50 + "%";
-      })
+      document.body.style.display = 'none';
     } else {
-        document.querySelector('.cards').style.gridTemplateColumns = 'repeat('+2+', '+1+'fr';
+      document.body.style.display = 'block';
     }
 }
 
