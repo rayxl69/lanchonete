@@ -469,10 +469,6 @@ cursor: pointer;
   align-items: center;
 }
 
-.cards .card2 .imagem img, .cards .card3 .imagem img {
-  transform: scale(1.4);
-}
-
 #btn {
 padding: 3vh 11vw;
 color: black;
