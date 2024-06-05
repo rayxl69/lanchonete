@@ -73,8 +73,9 @@ background-color: #f3ad5c;
 
 
 .itens ul {
-width: 100vw;
+width: 94vw;
 height: 50vh;
+margin: 0 3vw;
 list-style: none;
 /*display: flex;
 flex-direction: column;
@@ -96,9 +97,9 @@ font-weight: bold;
   background-color: orange;
 }
 
-.itens ul li:nth-child(2) {
+/*.itens ul li:nth-child(2) {
   margin-right: 3vw;
-}
+}*/
 
 .itens ul li a{
 font-style: italic;
