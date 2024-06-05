@@ -83,7 +83,7 @@ align-items: center;
 gap: 10vh;*/
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-gap: 45px;
+/*grid-gap: 45px;*/
 place-items: start center;
 text-transform: uppercase;
 font-size: 20px;
