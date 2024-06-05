@@ -73,9 +73,9 @@ background-color: #f3ad5c;
 
 
 .itens ul {
-width: 94vw;
+width: 90vw;
 height: 50vh;
-margin: 0 3vw;
+margin: 0 5vw;
 list-style: none;
 /*display: flex;
 flex-direction: column;
@@ -84,7 +84,7 @@ align-items: center;
 gap: 10vh;*/
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-gap: 65px;
+/*grid-gap: 65px;
 place-items: center;
 text-transform: uppercase;
 font-size: 20px;
