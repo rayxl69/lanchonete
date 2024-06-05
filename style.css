@@ -142,10 +142,11 @@ opacity: 0;
 }
 
 .sidebar .itens {
+padding-top: 2vh;
 margin-top: 10vh;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 left: 0;
 width: 100vw;
 height: 100vh;
