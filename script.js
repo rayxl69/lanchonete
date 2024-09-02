@@ -4,7 +4,7 @@ const app = express();
 // Rota raiz (URL principal) para retornar uma mensagem simples
 app.get('/', (req, res) => {
     const message = "Coloquei essa mensagem no meu site só pra você, edinho.";
-    res.send(message);
+    res.status(200).send(message);
 });
 
 const PORT = 3000;
