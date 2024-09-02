@@ -1,3 +1,18 @@
+const express = require('express');
+const app = express();
+
+// Rota raiz (URL principal) para retornar uma mensagem simples
+app.get('/', (req, res) => {
+    const message = "Coloquei essa mensagem no meu site só pra você, edinho.";
+    res.send(message);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
+
+
 function toggleSidebar() {
   let nav = document.querySelector(".nav");
   let main = document.querySelector(".lista");
